@@ -3,7 +3,7 @@
     window.fcWidget.init({
       	 token: "ce73e275-a505-4d32-b8ab-dae656c3f258",
 	 host: "https://mtnhelp.freshchat.com",
-	 widgetUuid: "7d0b2fd8-1e70-4eb5-bc1d-e77ffbb1ddda"
+	 
     });
   }
   function initialize(i,t){var e;i.getElementById(t)?
