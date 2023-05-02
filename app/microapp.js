@@ -2,7 +2,7 @@ var Ayoba = getAyoba()
  
 /**
 * Determine the mobile operating system and returns the
-* proper javascript interface
+* proper javascript interfaces
 */
 function getAyoba() {
    var userAgent = navigator.userAgent || navigator.vendor || window.opera;
