@@ -1,23 +1,15 @@
-var Ayoba = getAyoba()
- 
-/**
-* Determine the mobile operating system and returns the
-* proper javascript interfaces
-*/
-function getAyoba() {
-   var userAgent = navigator.userAgent || navigator.vendor || window.opera;
- 
-   // Windows Phone must come first because its UA also contains "Android"
-   if (/windows phone/i.test(userAgent)) {
-       return null;
-   }
- 
-   if (/android/i.test(userAgent)) {
-       return Android;
-   }
- 
-   // iOS detection from: http://stackoverflow.com/a/9039885/177710
-   if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-       return null; // todo
-   }
- 
+<script>
+  function initFreshChat() {
+    window.fcWidget.init({
+      	 token: "ce73e275-a505-4d32-b8ab-dae656c3f258",
+	 host: "https://mtnhelp.freshchat.com",
+	 widgetUuid: "7d0b2fd8-1e70-4eb5-bc1d-e77ffbb1ddda"
+    });
+  }
+  function initialize(i,t){var e;i.getElementById(t)?
+  initFreshChat():((e=i.createElement("script")).id=t,e.async=!0,
+  e.src="https://mtnhelp.freshchat.com/js/widget.js",e.onload=initFreshChat,i.head.appendChild(e))}
+  function initiateCall(){initialize(document,"Freshchat-js-sdk")}
+  window.addEventListener?window.addEventListener("load",initiateCall,!1):
+  window.attachEvent("load",initiateCall,!1);
+</script>
