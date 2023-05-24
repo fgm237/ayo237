@@ -27,32 +27,8 @@
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-  <script type="application/javascript" >
-  var Ayoba = getAyoba()
+  <script type="application/javascript" src="lib/microapp.js">
  
-/**
-* Determine the mobile operating system and returns the
-* proper javascript interface
-*/
-function getAyoba() {
-   var userAgent = navigator.userAgent || navigator.vendor || window.opera;
- 
-   // Windows Phone must come first because its UA also contains "Android"
-   if (/windows phone/i.test(userAgent)) {
-       return Android;
-   }
- 
-   if (/android/i.test(userAgent)) {
-       return Android;
-   }
- 
-   // iOS detection from: http://stackoverflow.com/a/9039885/177710
-   if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-       return Android;
-   }
- 
-   return Android;
-}
 
       </script>
   <script type="application/javascript" >
