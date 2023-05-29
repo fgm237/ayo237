@@ -1,44 +1,13 @@
 <!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Basic Page Needs
-  ––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta charset="utf-8">
-  <title>AYOBA's MTN Cameroon live chat Test</title>
-  <style type="text/css">
-    body{background:#f3F3F3;}
-  </style>
-  <script type="application/javascript" src="https://wchat.freshchat.com/js/widget.js"></script>
-</head>
-
+<html>
 <body>
-  
-  
-  <div class="container">
-    <div class="row">
-      <div class="two column" style="margin-top: 25%;text-align:center;">
-        <h4>Y'ello!</h4>
-        <h5>Loading Support...</h5>
-      </div>
-    </div>
-  </div>
-
-<!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
- 
-  <script type="application/javascript" >
-window.fcWidget.init({
-    token: "ce73e275-a505-4d32-b8ab-dae656c3f258",
-    host: "https://wchat.freshchat.com" ,
-    open: true ,
-  });
-  
-  </script>
- 
-   <script type="application/javascript" src="lib/microapp.js"></script>
-  
-  
-  </body>
+<div id="xenioowebchat" style="width: 100%; height: 600px;"></div>
+<script data-id='xenioo' data-node='app02' src="https://static.xenioo.com/webchat/xenioowebchat.js"></script>
+<script>
+    xenioowebchat.EmbedChatLanding({
+        container: 'xenioowebchat',
+        landingUrl: 'https://landing.xenioo.com/lp/app02/87ff92ae-e389-4890-9776-c35dfcd1533b'
+    });
+</script>
+</body>
 </html>
